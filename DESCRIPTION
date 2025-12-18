@@ -1,21 +1,26 @@
 Package: AlzPreFunction
-Type: Package
-Title: What the Package Does (Title Case)
+Title: Alzheimer's Disease Risk Prediction Using Random Forest
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Authors@R: 
+    person(given = "Yuzou",
+           family = "Lu",
+           role = c("aut", "cre"),
+           email = "Yuzou.Lu23@student.xjtlu.edu.cn")
+Description: An R package that provides a pre-trained Random Forest model to
+    classify Alzheimer's disease risk from clinical and demographic features.
+    Includes necessary data preprocessing and returns classified risk levels
+    for reproducible bioinformatics analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-Suggests: 
+Depends:
+    R (>= 4.1.0)
+Imports:
+    caret,
+    randomForest,
+    ranger
+Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
