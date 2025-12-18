@@ -6,11 +6,7 @@ output: github_document
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
 )
 ```
 
@@ -32,7 +28,7 @@ You can install the development version of AlzPreFunction like so:
 ``` r
 if (!require("remotes")) install.packages("remotes")
 
-remotes::install_github("你的GitHub用户名/AlzPreFunction")
+remotes::install_github("jifenglinglan/AlzPreFunction")
 ```
 To update between versions, please remove old version with the following codes and then reinstall it with the above codes.
 
@@ -84,3 +80,10 @@ The LightGBM model was selected as the final deployed model due to its superior 
 knitr::include_graphics("inst/extdata/PRC.jpg")
 knitr::include_graphics("inst/extdata/ROC FPR.jpg")
 
+## Group Division
+
+Hongyao.Yang 2363361 Machine learning modeling Keyu.Fang 2252078 and
+Zhenyu.Yang 2363283 Shiny website for database and model deployment
+Yuzou.Lu 2360162 Create an R package for reproducible software
+
+Finally, we jointly completed the project report.
