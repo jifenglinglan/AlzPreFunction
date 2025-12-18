@@ -83,3 +83,4 @@ The LightGBM model was selected as the final deployed model due to its superior 
 ```{r performance-plot, echo=FALSE, fig.cap="ROC Curves for Random Forest and Elastic Net Models"}
 knitr::include_graphics("inst/extdata/PRC.jpg")
 knitr::include_graphics("inst/extdata/ROC FPR.jpg")
+
