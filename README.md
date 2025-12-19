@@ -52,37 +52,16 @@ library(AlzPreFunction)
 data(example_input)
 
 # View the data
-head(example_input)
-#> # A tibble: 6 × 33
-#>     Age Gender Ethnicity EducationLevel   BMI Smoking
-#>   <dbl>  <dbl>     <dbl>          <dbl> <dbl>   <dbl>
-#> 1    73      0         0              2  22.9       0
-#> 2    89      0         0              0  26.8       0
-#> 3    73      0         3              1  17.8       0
-#> 4    74      1         0              1  33.8       1
-#> 5    89      0         0              0  20.7       0
-#> 6    86      1         1              1  30.6       0
-#> # ℹ 27 more variables: AlcoholConsumption <dbl>,
-#> #   PhysicalActivity <dbl>, DietQuality <dbl>,
-#> #   SleepQuality <dbl>, FamilyHistoryAlzheimers <dbl>,
-#> #   CardiovascularDisease <dbl>, Diabetes <dbl>,
-#> #   Depression <dbl>, HeadInjury <dbl>, Hypertension <dbl>,
-#> #   SystolicBP <dbl>, DiastolicBP <dbl>,
-#> #   CholesterolTotal <dbl>, CholesterolLDL <dbl>, …
+print(example_input)
 
 # Predict Alzheimer's risk
 predictions <- predict_risk(example_input)
 
 # View predictions
 head(predictions)
-#> [1] "Low Risk"  "Low Risk"  "Low Risk"  "Low Risk"  "High Risk"
-#> [6] "Low Risk"
 
 # Summary of risk levels
 table(predictions)
-#> predictions
-#> High Risk  Low Risk 
-#>         1         9
 ```
 
 ## Model Performance
@@ -107,10 +86,9 @@ superior predictive performance.
 Models](inst/extdata/PRC.jpg)![ROC Curves for Random Forest and Elastic
 Net Models](inst/extdata/ROC%20FPR.jpg)
 
-This ROC curve（First figure) illustrates the comparison of classification performance between the LightGBM and ElasticNet models in the Alzheimer's disease prediction task.
+This PRC graph（First figure) further compares the performance of the two models in scenarios where the positive class samples are relatively scarce, with a focus on the trade-off between precision and recall.
 
-This PRC graph further compares the performance of the two models in scenarios where the positive class samples are relatively scarce, with a focus on the trade-off between precision and recall.
-
+This ROC curve illustrates the comparison of classification performance between the LightGBM and ElasticNet models in the Alzheimer's disease prediction task.
 ## Group Division
 
 Hongyao.Yang 2363361 Machine learning modeling Keyu.Fang 2252078 and
