@@ -87,7 +87,22 @@ superior predictive performance.
 
 ## Performance Visualization
 
-![ROC Curves for Random Forest and Elastic NetModels](inst/extdata/PRC.jpg)    ![ROC Curves for Random Forest and ElasticNet Models](inst/extdata/ROC%20FPR.jpg)
+<table>
+  <tr>
+    <td align="center">
+      <strong>Precision-Recall Curve (PRC)</strong><br>
+      <img src="inst/extdata/PRC.jpg" alt="PRC Curve Comparison between LightGBM and ElasticNet" width="400"/>
+      <br>
+      This PRC graph further compares the performance of the two models in scenarios where the positive class samples are relatively scarce, with a focus on the trade-off between precision and recall.
+    </td>
+    <td align="center">
+      <strong>ROC Curve</strong><br>
+      <img src="inst/extdata/ROC%20FPR.jpg" alt="ROC Curve Comparison between LightGBM and ElasticNet" width="400"/>
+      <br>
+      This ROC curve illustrates the comparison of classification performance between the LightGBM and ElasticNet models in the Alzheimer's disease prediction task.
+    </td>
+  </tr>
+</table>
 
 This PRC graph（First figure) further compares the performance of the two models in scenarios where the positive class samples are relatively scarce, with a focus on the trade-off between precision and recall.
 
