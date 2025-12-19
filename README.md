@@ -3,6 +3,11 @@ AlzPreFunction: Alzheimer’s Disease Risk Prediction
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![R build status](https://img.shields.io/badge/R%20build-passing-brightgreen.svg)]()
+
+
 ## Overall
 
 <!-- badges: start -->
