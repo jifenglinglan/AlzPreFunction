@@ -79,7 +79,7 @@ The LightGBM model was selected as the final deployed model due to its superior 
 ```{r performance-plot, echo=FALSE, fig.cap="ROC Curves for Random Forest and Elastic Net Models"}
 knitr::include_graphics("inst/extdata/PRC.jpg")
 knitr::include_graphics("inst/extdata/ROC FPR.jpg")
-
+```
 ## Group Division
 
 Hongyao.Yang 2363361 Machine learning modeling Keyu.Fang 2252078 and
@@ -87,3 +87,4 @@ Zhenyu.Yang 2363283 Shiny website for database and model deployment
 Yuzou.Lu 2360162 Create an R package for reproducible software
 
 Finally, we jointly completed the project report.
+
