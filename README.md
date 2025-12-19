@@ -87,9 +87,7 @@ superior predictive performance.
 
 ## Performance Visualization
 
-![ROC Curves for Random Forest and Elastic Net
-Models](inst/extdata/PRC.jpg)![ROC Curves for Random Forest and Elastic
-Net Models](inst/extdata/ROC%20FPR.jpg)
+![ROC Curves for Random Forest and Elastic NetModels](inst/extdata/PRC.jpg)    ![ROC Curves for Random Forest and ElasticNet Models](inst/extdata/ROC%20FPR.jpg)
 
 This PRC graph（First figure) further compares the performance of the two models in scenarios where the positive class samples are relatively scarce, with a focus on the trade-off between precision and recall.
 
