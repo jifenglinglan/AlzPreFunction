@@ -3,7 +3,7 @@ AlzPreFunction: Alzheimer’s Disease Risk Prediction
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# AlzPreFunction instruction
+## Overall
 
 <!-- badges: start -->
 
@@ -16,7 +16,7 @@ Based on a Kaggle bioinformatics dataset,we developed seven machine
 learning models and one deep learning model. The champion model is
 LightGBM (AUC = 0.937), which showed superior performance and robustness
 compared to the contrast model Elastic Net (AUC = 0.899).As a result,we
-choose to use random forest.
+choose to use LightGBM.
 
 The package implements the trained LightGBM model with necessary data
 preprocessing and exports a prediction function that returns classified
@@ -39,7 +39,8 @@ codes and then reinstall it with the above codes.
 remove.packages("AlzPreFunction")
 detach("package:AlzPreFunction")
 ```
-
+Dependencies:LightGBM,Elastic Net
+R version requirement:R ≥ 3.5.0
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
@@ -89,15 +90,13 @@ table(predictions)
 The following table compares the performance of the champion model and
 the contrast model based on 5-fold cross-validation:
 
-## Model Performance Comparison
-
 The table below compares the champion and contrast models based on
 5-fold cross-validation:
 
 | Model | AUC | Key Characteristics |
 |:---|:--:|:---|
-| **LightGBM** (Champion) | **0.937** | Highest AUC, fast training, excellent handling of categorical features |
-| Elastic Net (Contrast) | 0.899 | Linear model with built-in feature selection, good interpretability |
+| **LightGBM** (Champion) | **0.884** | Highest AUC, fast training, excellent handling of categorical features |
+| Elastic Net (Contrast) | 0.825 | Linear model with built-in feature selection, good interpretability |
 
 The LightGBM model was selected as the final deployed model due to its
 superior predictive performance.
@@ -108,6 +107,10 @@ superior predictive performance.
 Models](inst/extdata/PRC.jpg)![ROC Curves for Random Forest and Elastic
 Net Models](inst/extdata/ROC%20FPR.jpg)
 
+This ROC curve（First figure) illustrates the comparison of classification performance between the LightGBM and ElasticNet models in the Alzheimer's disease prediction task.
+
+This PRC graph further compares the performance of the two models in scenarios where the positive class samples are relatively scarce, with a focus on the trade-off between precision and recall.
+
 ## Group Division
 
 Hongyao.Yang 2363361 Machine learning modeling Keyu.Fang 2252078 and
@@ -115,3 +118,4 @@ Zhenyu.Yang 2363283 Shiny website for database and model deployment
 Yuzou.Lu 2360162 Create an R package for reproducible software
 
 Finally, we jointly completed the project report.
+## Reference
