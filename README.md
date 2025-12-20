@@ -103,11 +103,14 @@ superior predictive performance.
 This PRC graph（First figure) further compares the performance of the two models in scenarios where the positive class samples are relatively scarce, with a focus on the trade-off between precision and recall.
 
 This ROC curve illustrates the comparison of classification performance between the LightGBM and ElasticNet models in the Alzheimer's disease prediction task.
-## Group Division
+## Author Countributions
 
-Hongyao.Yang 2363361 Machine learning modeling Keyu.Fang 2252078 and
-Zhenyu.Yang 2363283 Shiny website for database and model deployment
-Yuzou.Lu 2360162 Create an R package for reproducible software
+Hongyao.Yang conceived, conducted and analyzed Machine Learning & Deep learning models.
 
-Finally, we jointly completed the project report.
-## Reference
+Keyu.Fang developed the website.
+
+Yuzou.Lu built r packages and github.
+
+Hongyao.Yang wrote method, result and conclusion.
+
+Zhenyu.Yang wrote introduction.
