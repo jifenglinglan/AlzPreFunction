@@ -114,3 +114,7 @@ Yuzou.Lu built r packages and github.
 Hongyao.Yang wrote method, result and conclusion.
 
 Zhenyu.Yang wrote introduction.
+
+Yuzou.Lu wrote abstract and discussion.
+
+Hongyao.Yang reviewed the manuscript
