@@ -15,12 +15,11 @@ AlzPreFunction: Alzheimer’s Disease Risk Prediction
 <!-- badges: end -->
 
 This R package was developed for predicting Alzheimer’s disease risk.
-You can find our dataset at:<https://www.kaggle.com/dsv/8668279>
 
 Based on a Kaggle bioinformatics dataset,we developed seven machine
 learning models and one deep learning model. The champion model is
-LightGBM (AUC = 0.937), which showed superior performance and robustness
-compared to the contrast model Elastic Net (AUC = 0.899).As a result,we
+LightGBM (AUC = 0.884), which showed superior performance and robustness
+compared to the contrast model Elastic Net (AUC = 0.825).As a result,we
 choose to use LightGBM.
 
 The package implements the trained LightGBM model with necessary data
