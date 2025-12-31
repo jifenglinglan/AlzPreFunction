@@ -14,7 +14,7 @@
 #' predictions <- predict_risk(example_input)
 #' head(predictions)
 predict_risk <- function(new_data) {
-  # 1. 加载模型
+  # 1. Load the model
   model_path <- system.file(
     "extdata",
     "final_model_lgb.rds",
@@ -25,7 +25,7 @@ predict_risk <- function(new_data) {
   }
   model <- readRDS(model_path)
 
-  # 2. 预处理（与训练一致）
+  # 2. pretreatment
   colnames(new_data) <- make.names(colnames(new_data))
 
   if ("SystolicBP" %in% names(new_data) &&
@@ -48,14 +48,14 @@ predict_risk <- function(new_data) {
     }
   }
 
-  # 3. 预测 - 使用 caret 的 predict.train
+  # 3. forecast
   prob_matrix <- caret::predict.train(
     model,
     newdata = new_data,
     type = "prob"
   )
 
-  # 4. 提取正类概率
+  # 4. Extract the probability of the positive class
   levels <- model$levels
   positive_class <- levels[2]
   if (is.na(positive_class) || !positive_class %in% colnames(prob_matrix)) {
@@ -64,7 +64,8 @@ predict_risk <- function(new_data) {
     prob_positive <- prob_matrix[, positive_class]
   }
 
-  # 5. 返回分类结果
+  # 5. Return the classification result
   risk_levels <- ifelse(prob_positive > 0.5, "High Risk", "Low Risk")
   return(as.character(risk_levels))
 }
+
